@@ -1,0 +1,30 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "wifi_conn.c"
+        "wikipedia.c"
+        "display_ui.c"
+        "audio_mic.c"
+        "speech_rec.c"
+        "imu.c"
+        "maze.c"
+        "game2048.c"
+        "wiki_image.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        nvs_flash
+        esp_wifi
+        esp_event
+        esp_netif
+        esp_http_client
+        esp-tls
+        json
+        driver
+        esp_driver_uart
+        esp_driver_i2c
+        vfs
+        esp_lcd
+        esp_lvgl_port
+        esp-sr
+        esp_new_jpeg
+)
